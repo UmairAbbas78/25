@@ -82,6 +82,10 @@ artisticBtn.addEventListener("click", () => {
   artisticBtn.classList.add("exp-btn-selected");
 });
 
+document.querySelector("#resume").addEventListener("click", () => {
+  window.open("./Images/UmairAbbasResume.pdf", "_blank");
+})
+
 function updateExperiences(expKey) {
   document.querySelector(
     "#exp-title"
