@@ -148,6 +148,7 @@ body {
   gap: 2rem;
   width: 80%;
   z-index: 10;
+  cursor: pointer;
   transition: transform var(--transition-speed);
 }
 
@@ -155,6 +156,10 @@ body {
   border-color: var(--color-primary);
   transform: scale(1.1);
   transition: transform var(--transition-speed);
+}
+
+.exp-btn-selected {
+  border-color: var(--color-primary);
 }
 
 .exp-menu {

@@ -54,9 +54,9 @@
       <div class="exp-menu">
         <!-- Menu Buttons Section -->
         <div class="menu">
-          <div class="exp-button" id="exp-btn-wondertech">
+          <div class="exp-button exp-btn-selected" id="exp-btn-wondertech">
             <img
-              src="/Images/wondertech.svg"
+              src="./Images/wondertech.svg"
               alt="wondertech"
               class="exp-logo"
             />
@@ -66,16 +66,20 @@
             </div>
           </div>
           <div class="vertical-line"></div>
-          <div class="exp-button" id="exp-btn-wondertech">
-            <img src="/Images/syslab.svg" alt="wondertech" class="exp-logo" />
+          <div class="exp-button" id="exp-btn-syslab">
+            <img src="./Images/syslab.svg" alt="syslab-logo" class="exp-logo" />
             <div class="exp-info">
               <p class="exp-title">Syslab</p>
               <p class="exp-time">April 2023 - Dec 2023</p>
             </div>
           </div>
           <div class="vertical-line"></div>
-          <div class="exp-button" id="exp-btn-wondertech">
-            <img src="/Images/artistic.svg" alt="wondertech" class="exp-logo" />
+          <div class="exp-button" id="exp-btn-artistic">
+            <img
+              src="./Images/artistic.svg"
+              alt="artistic-logo"
+              class="exp-logo"
+            />
             <div class="exp-info">
               <p class="exp-title">Artistic Milliners</p>
               <p class="exp-time">Jun 2022 - July 2022</p>
@@ -86,9 +90,9 @@
         <!-- Menu Render Section -->
 
         <div class="exp-rend">
-          <div class="text-blue bold bio">
+          <div id="exp-title" class="text-blue bold bio">
             Sr. Full-Stack Developer & AR Developer
-            <span class="light">[1yr 6mon]</span>
+            <span id="exp-duration" class="light">[1yr 6mon]</span>
           </div>
           <ul class="exp-list" id="exp-list">
             <li class="exp-list-item">
@@ -109,27 +113,15 @@
             </li>
           </ul>
 
-          <div class="skill-btns">
+          <div id="skill-btns" class="skill-btns">
             <div class="skill-btn">React</div>
-            <div class="skill-btn">Node</div>
-            <div class="skill-btn">Node</div>
-            <div class="skill-btn">Node</div>
-            <div class="skill-btn">Node</div>
-            <div class="skill-btn">Node</div>
-            <div class="skill-btn">Node</div>
-            <div class="skill-btn">Node</div>
-            <div class="skill-btn">Node</div>
-            <div class="skill-btn">Node</div>
-            <div class="skill-btn">Node</div>
-            <div class="skill-btn">Node</div>
-            <div class="skill-btn">Node</div>
-            <div class="skill-btn">Node</div>
-            <div class="skill-btn">Node</div>
             <div class="skill-btn">Node</div>
             <div class="skill-btn">Express</div>
           </div>
         </div>
       </div>
     </section>
+
+    <script src="./script.js"></script>
   </body>
 </html>
