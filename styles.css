@@ -1,0 +1,251 @@
+:root {
+  --color-primary: #72e5f2;
+  --color-black: #021226;
+  --color-dark: #021140;
+  --text-white: #e4e4e4;
+  --text-muted: #d3d3d3;
+
+  --font-size-title: 3rem;
+  --font-size-subtitle: 1.75rem;
+  --font-size-body: 1.2rem;
+
+  --padding-header: 2rem;
+  --padding-section: 4rem 8rem;
+  --transition-speed: 0.3s;
+
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: var(--color-black);
+  color: var(--text-white);
+}
+
+.header-el {
+  display: flex;
+  flex-direction: row;
+  background: linear-gradient(135deg, var(--color-dark), var(--color-black));
+  background-size: 200% 200%;
+  animation: background-effect 30s ease-in-out infinite;
+  height: 40rem;
+  position: relative;
+  overflow: hidden;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--padding-header);
+  gap: 2rem;
+  border-bottom: var(--color-primary) 2px solid;
+}
+
+.header-dec {
+  position: absolute;
+  top: 2%;
+  right: 2%;
+  width: 20%;
+  opacity: 0.4;
+  filter: brightness(2);
+  z-index: 1;
+}
+
+.dec-images {
+  position: absolute;
+  z-index: 1;
+}
+
+.profile {
+  z-index: 10;
+}
+
+.profile img {
+  width: 600px;
+  margin-top: 10rem;
+  transition: all var(--transition-speed) ease-in-out;
+}
+.profile img:hover {
+  filter: drop-shadow(10px 0px 0px rgba(0, 0, 139, 0.8));
+  transform: scale(1.05);
+  transition: all var(--transition-speed) ease-in-out;
+}
+
+.text-blue {
+  color: var(--color-primary);
+}
+
+.full-stack-txt {
+  transform: rotate(180deg);
+  letter-spacing: 0.1em;
+}
+
+.intro-sec p.resume-link {
+  margin-bottom: 1rem;
+  cursor: pointer;
+  transition: color var(--transition-speed);
+}
+.intro-sec p.resume-link:hover {
+  color: white;
+}
+
+.main-heading {
+  font-size: var(--font-size-title);
+  line-height: 1.2;
+  margin-top: 10rem;
+}
+
+.bio {
+  font-size: var(--font-size-body);
+}
+
+.full-stack-sec {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  gap: 20px;
+}
+
+.divider {
+  width: 2px;
+  height: 32%;
+  background-color: var(--text-white);
+}
+
+.intro-sec {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  height: 100%;
+}
+
+/* Experience Section */
+
+.experience {
+  padding: var(--padding-section);
+  position: relative;
+  overflow: hidden;
+}
+
+.heading::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  background-color: var(--color-primary);
+  margin-right: 10px;
+  border-radius: 50%;
+}
+
+.exp-button {
+  border: 1px solid var(--text-white);
+  border-radius: 10px;
+  padding: 0rem 2rem;
+  display: flex;
+  gap: 2rem;
+  width: 80%;
+  z-index: 10;
+  transition: transform var(--transition-speed);
+}
+
+.exp-button:hover {
+  border-color: var(--color-primary);
+  transform: scale(1.1);
+  transition: transform var(--transition-speed);
+}
+
+.exp-menu {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: 40% 60%;
+  gap: 4rem;
+}
+
+.exp-logo {
+  width: 60px;
+}
+
+.vertical-line {
+  background-color: var(--text-muted);
+  width: 1px;
+  height: 4rem;
+}
+
+.exp-title {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.exp-time {
+  font-weight: lighter;
+  color: var(--text-muted);
+}
+
+.menu {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+.light {
+  font-weight: lighter;
+  margin-left: 2px;
+}
+
+.exp-dec-1 {
+  bottom: -25%;
+  opacity: 0.2;
+  left: -5%;
+}
+.exp-dec-2 {
+  top: 5%;
+  opacity: 0.2;
+  right: -2%;
+}
+
+.exp-list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.skill-btns {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+
+.skill-btn {
+  border: 1px solid var(--text-muted);
+  padding: 8px;
+  border-radius: 10px;
+  transition: transform var(--transition-speed);
+}
+
+.skill-btn:hover {
+  transform: scale(1.1);
+  transition: transform var(--transition-speed);
+}
+
+@keyframes background-effect {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
